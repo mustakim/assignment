@@ -1,0 +1,154 @@
+<form (ngSubmit)="save()" [formGroup]="form">
+  <div fxLayout="row" fxLayoutAlign="start center" mat-dialog-title>
+    <h2 class="headline m-0" fxFlex="auto">
+      New Employee
+    </h2>
+
+    <button
+      class="text-secondary"
+      mat-dialog-close
+      mat-icon-button
+      type="button"
+    >
+      <mat-icon [icIcon]="icClose"></mat-icon>
+    </button>
+  </div>
+
+  <mat-divider class="-mx-6 text-border"></mat-divider>
+
+  <mat-dialog-content fxLayout="column">
+
+    <mat-form-field class="mt-6">
+      <mat-label>First Name</mat-label>
+      <input cdkFocusInitial formControlName="firstName" matInput />
+
+      <mat-icon
+        [icIcon]="icPerson"
+        class="ltr:mr-3 rtl:ml-3"
+        matPrefix
+      ></mat-icon>
+    </mat-form-field>
+
+    <!-- middle name -->
+    <mat-form-field class="mt-6">
+      <mat-label>Middle Name</mat-label>
+      <input cdkFocusInitial formControlName="middleName" matInput />
+
+      <mat-icon
+        [icIcon]="icPerson"
+        class="ltr:mr-3 rtl:ml-3"
+        matPrefix
+      ></mat-icon>
+    </mat-form-field>
+
+
+    <!-- last name -->
+    <mat-form-field>
+      <mat-label>Last Name</mat-label>
+      <input cdkFocusInitial formControlName="lastName" matInput />
+
+      <mat-icon
+        [icIcon]="icPerson"
+        class="ltr:mr-3 rtl:ml-3"
+        matPrefix
+      ></mat-icon>
+    </mat-form-field>
+
+    <!-- Date if birth -->
+    <mat-form-field>
+      <mat-label>Date of birth</mat-label>
+      <input cdkFocusInitial formControlName="dateOfBirth" matInput [matDatepicker]="picker1"/>
+      <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+      <mat-datepicker #picker1></mat-datepicker>
+
+      <mat-icon
+        [icIcon]="icPerson"
+        class="ltr:mr-3 rtl:ml-3"
+        matPrefix
+      ></mat-icon>
+    </mat-form-field>
+
+    <!-- Joining date name -->
+    <mat-form-field>
+      <mat-label>Joining Date</mat-label>
+      <input cdkFocusInitial formControlName="joiningDate" matInput [matDatepicker]="picker2" />
+      <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+      <mat-datepicker #picker2></mat-datepicker>
+
+      <mat-icon
+        [icIcon]="icPerson"
+        class="ltr:mr-3 rtl:ml-3"
+        matPrefix
+      ></mat-icon>
+    </mat-form-field>
+
+     <!-- designation -->
+     <mat-form-field>
+      <mat-label>Designation</mat-label>
+      <input cdkFocusInitial formControlName="designation" matInput />
+
+      <mat-icon
+        [icIcon]="icPerson"
+        class="ltr:mr-3 rtl:ml-3"
+        matPrefix
+      ></mat-icon>
+    </mat-form-field>
+
+    <!-- Department -->
+    <mat-form-field>
+      <mat-label>Department</mat-label>
+      <input cdkFocusInitial formControlName="department" matInput />
+
+      <mat-icon
+        [icIcon]="icPerson"
+        class="ltr:mr-3 rtl:ml-3"
+        matPrefix
+      ></mat-icon>
+    </mat-form-field>
+
+
+
+
+
+  </mat-dialog-content>
+
+  <mat-dialog-actions align="end">
+    <button mat-button mat-dialog-close type="button">CANCEL</button>
+    <button color="primary" mat-button type="submit">SUBMIT</button>
+  </mat-dialog-actions>
+</form>
+
+<!-- <mat-menu #settingsMenu="matMenu" xPosition="before" yPosition="below">
+  <button mat-menu-item>
+    <mat-icon [icIcon]="icPrint"></mat-icon>
+    <span>Print</span>
+  </button>
+
+  <button mat-menu-item>
+    <mat-icon [icIcon]="icDownload"></mat-icon>
+    <span>Export</span>
+  </button>
+
+  <button mat-menu-item>
+    <mat-icon [icIcon]="icDelete"></mat-icon>
+    <span>Delete</span>
+  </button>
+</mat-menu> -->
+
+<!-- 1. employee name
+2. org type
+3. phone
+4. email
+5. logo
+6. address
+7. map
+8. district
+9, sub district
+10. about
+11. mission
+12. vision
+13. objective
+14. major activities
+15. what we do
+16. staff category
+ -->

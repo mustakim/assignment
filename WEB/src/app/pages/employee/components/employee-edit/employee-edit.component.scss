@@ -1,0 +1,19 @@
+custom-section {
+    position: relative;
+}
+
+.custom-form-80 {
+    float: left;
+    width: 78% !important;
+}
+
+.custom-form-20 {
+    float: right;
+    width: 18% !important;
+}
+
+// @for $i from 1 through 100{
+//     .custom-form-#{$i} {
+//         width: #{$i}px !important;
+//     }
+// }
