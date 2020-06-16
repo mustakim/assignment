@@ -91,8 +91,8 @@ export class DashboardComponent implements OnInit {
 
   theme = theme;
 
-  totalOrganizations: any = 0;
-  totalUsers: any = 0;
+  totalEmployees: any = 0;
+  totalLeaves: any = 0;
 
 
   constructor(

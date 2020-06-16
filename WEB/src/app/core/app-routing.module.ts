@@ -7,7 +7,7 @@ import { VexRoutes } from '../../@vex/interfaces/vex-route.interface';
 const childrenRoutes: VexRoutes = [
   {
     path: '',
-    redirectTo: 'employee',
+    redirectTo: 'dashboards',
     pathMatch: 'full',
   },
   {
@@ -16,10 +16,6 @@ const childrenRoutes: VexRoutes = [
   },
   {
     path: 'employee',
-    loadChildren: () => import('../pages/employee/employee.module').then(m => m.EmployeeModule),
-  },
-  {
-    path: 'employee-leave',
     loadChildren: () => import('../pages/employee/employee.module').then(m => m.EmployeeModule),
   },
   {
