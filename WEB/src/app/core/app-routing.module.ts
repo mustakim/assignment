@@ -7,7 +7,7 @@ import { VexRoutes } from '../../@vex/interfaces/vex-route.interface';
 const childrenRoutes: VexRoutes = [
   {
     path: '',
-    redirectTo: 'dashboards',
+    redirectTo: 'employee',
     pathMatch: 'full',
   },
   {

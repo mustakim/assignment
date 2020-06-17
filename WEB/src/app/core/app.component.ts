@@ -67,19 +67,94 @@ export class AppComponent {
         this.styleService.setStyle(queryParamMap.get('style') as Style)
       );
 
+    // this.navigationService.items = [
+    //   {
+    //     type: 'link',
+    //     label: 'Dashboard',
+    //     route: ['dashboards'],
+    //     icon: icLayers,
+    //   },
+    //   {
+    //     type: 'link',
+    //     label: 'Employee',
+    //     icon: icAssignment,
+    //     route: 'employee',
+    //   }
+    // ];
+
     this.navigationService.items = [
       {
         type: 'link',
         label: 'Dashboard',
         route: 'dashboards',
-        icon: icLayers,
+        icon: icLayers
       },
       {
-        type: 'link',
-        label: 'Employee',
-        icon: icAssignment,
-        route: 'employee',
-      }
+        type: 'subheading',
+        label: 'Apps',
+        children: [
+          {
+            type: 'link',
+            label: 'Organization',
+            icon: icAssignment,
+            route: 'organization'
+          },
+          // {
+          //   type: 'dropdown',
+          //   label: 'Organization',
+          //   icon: icAssignment,
+          //   children: [
+          //     {
+          //       type: 'link',
+          //       label: 'All Organization',
+          //       route: 'organization'
+          //     },
+          //     {
+          //       type: 'link',
+          //       label: 'Organization Type',
+          //       route: 'organization-type'
+          //     }
+          //   ]
+          // },
+          {
+            type: 'link',
+            label: 'User',
+            icon: icAssignment,
+            route: 'user'
+          },
+
+          {
+            type: 'link',
+            label: 'Knowledge Center',
+            icon: icAssignment,
+            route: 'knowledge-center'
+          }
+        ]
+      },
+      {
+        type: 'subheading',
+        label: 'Settings',
+        children: [
+          {
+            type: 'link',
+            label: 'Advertisement',
+            icon: icAssignment,
+            route: 'advertisement'
+          },
+          {
+            type: 'link',
+            label: 'Push Notification',
+            icon: icAssignment,
+            route: 'push-notification'
+          },
+          {
+            type: 'link',
+            label: 'SMS',
+            icon: icAssignment,
+            route: 'sms'
+          }
+        ]
+      },
     ];
   }
 }
