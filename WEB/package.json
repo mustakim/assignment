@@ -37,7 +37,7 @@
     "@types/googlemaps": "^3.39.3",
     "@visurel/iconify-angular": "^0.0.7",
     "angular-calendar": "^0.27.14",
-    "apexcharts": "^3.8.2",
+    "apexcharts": "^3.24.0",
     "color": "^3.1.2",
     "crypto-js": "^4.0.0",
     "cytoscape": "^3.14.0",
