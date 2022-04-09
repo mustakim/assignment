@@ -49,7 +49,7 @@
     "highlight.js": "^9.15.8",
     "luxon": "^1.16.1",
     "mat-timepicker": "^1.1.1",
-    "moment": "^2.24.0",
+    "moment": "^2.29.2",
     "ngx-quill": "^7.3.6",
     "ngx-showdown": "^5.0.0",
     "ngx-take-until-destroy": "^5.4.0",
